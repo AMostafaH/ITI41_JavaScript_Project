@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="../Css/MemoryGame.css">
+    <link rel="stylesheet" href="../Css/font-awesome.min.css" />
+</head>
+<body>
+    <!-- Start Game -->
+    <div class="game">
+        <div class="container">
+            <h2>Memory Game</h2>
+            <div class="levelButtons">
+                <button id="easy">Easy Mode</button>
+                <button id="difficult">Difficult Mode</button>
+                <button id="reset">Reset <i class="fa fa-repeat"></i></button>
+            </div>
+            <div class="start-game" id="overlay">
+                <button id="startgame">Start Game</button>
+            </div>
+            <div class="gameInfo">
+                <div>Hello : <span id="playername"></span></div>
+                <div class="timer-container">
+                    <span class="timer"><i class="fa fa-hourglass-start"></i> <span class="timerfont">Timer :</span> 00:00</span>
+                </div>
+                <div>Wrong Moves : <span id="wrongMoves">0</span></div>
+                <div>Overall Moves : <span id="allMoves">0</span></div>
+            </div>
+            <div class="game-block">
+                <div class="img-block" data-img="facebook">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-facebook fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="facebook">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-facebook fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="twitter">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-twitter fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="twitter">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-twitter fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="github">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-github fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="github">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-github fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="instagram">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-instagram fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="instagram">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-instagram fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="codepen">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-codepen fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="codepen">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-codepen fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="pinterest-p">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-pinterest-p fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="pinterest-p">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-pinterest-p fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="linkedin">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-linkedin fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="linkedin">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-linkedin fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="gitlab">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-gitlab fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="gitlab">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-gitlab fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="whatsapp">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-whatsapp fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="whatsapp">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-whatsapp fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="stack-overflow">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-stack-overflow fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block" data-img="stack-overflow">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-stack-overflow fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <!--Addtional For Difficult Mode-->
+                <div class="img-block difMode" data-img="tumblr">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-tumblr fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="tumblr">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-tumblr fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="amazon">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-amazon fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="amazon">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-amazon fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="linux">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-linux fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="linux">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-linux fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="skyatlas">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-skyatlas fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="skyatlas">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-skyatlas fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="forumbee">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-forumbee fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="forumbee">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-forumbee fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="angellist">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-angellist fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="angellist">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-angellist fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="lastfm">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-lastfm fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <div class="img-block difMode" data-img="lastfm">
+                    <div class="front"></div>
+                    <div class="back">
+                        <i class="fa fa-lastfm fa-5x fa-fw"></i>
+                    </div>
+                </div>
+                <!--Addtional For Difficult Mode-->
+            </div>
+            <audio id="success" src="../Sound/success.mp4" preload="auto"></audio>
+            <audio id="fail" src="../Sound/fail.mp4" preload="auto"></audio>
+            <div class="try-again">
+                <span>Well Done !</span>
+                <span id="playerGameInfo"></span>
+                <span>Try Again ?</span>
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+        </div>
+        <a href="../index.html" class="home">Home</a>
+    </div>
+    <!-- End Game--> 
+    <script src="../JS/MemoryGame.js"></script>  
+</body>
+</html>

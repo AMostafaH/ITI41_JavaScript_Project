@@ -1,0 +1,34 @@
+Project 
+Web Site Contain 6 Pages 
+Home Page
+alert welcome & prombt ask for Name , show welcome name in page
+3 Colored buttons change background into 2 any colors + 1 button Random color
+Digital Clock updated 
+Banner image change every 3 sec (5 Images will loop)
+=======================
+Gallery Page 
+small 10 images and each image is clickable once cilck will show in big contatiner and show border when hover
+=======================
+Registeration Page 
+form have form items ( username, first name, second name , e-mail, password,mobile number).
+Validation for the Form as Follwoing :
+username is required and must be 5-8 charachters 
+password is required and must be not less than 7 charachters
+email must be valid email
+first name & Second name shouldn't include numbers 
+mobile phone must be a number of 11 digits and start with "01"
+=======================
+About us
+data about you 
+=======================
+Game Page
+Any idea for a game that include timer and score
+=======================
+Quiz Page 
+Page contains 4 question fill in blank 
+and submit answer button that show score out of 100 in alert 
+=======================
+Bouns 
+Quiz include T/F question
+Quiz Show right answer
+Game Include 2 Levels

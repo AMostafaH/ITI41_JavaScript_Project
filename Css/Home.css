@@ -1,0 +1,83 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eaeaea;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*================================*/
+.homeCont ul {
+	padding: 15px 0;
+	margin: 0 auto;
+	list-style: none;
+    text-align: center;
+    background-color: #f97619;
+}
+.homeCont ul li {
+	display: inline-block;
+	padding: 7px 0;
+}
+.homeCont ul li a {
+	font-size: 20px;
+    padding: 10px 22px;
+	font-weight: 400;
+	text-decoration: none;
+	color: black;
+}
+.homeCont ul li a:hover{
+	cursor: pointer;
+	color: white;
+}
+.header #image {
+    width: 100%;
+}
+.homeCont h2 {
+    text-align: center;
+    color: #f97619;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 40px auto
+}
+/* Start Showing Time */
+#clock {
+  color: #f97619;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  min-height: 60px;
+  margin-bottom: 40px;
+}
+.homeCont button {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: .5s;
+    outline: none;
+    border: 1px solid transparent;
+    width: 200px;
+    height: 50px;
+    margin-right: 5px;
+}
+.buttons {
+    margin:15px auto 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.homeCont #blue {
+    background-color: lightseagreen;
+}
+.homeCont #brown {
+    background-color: brown;
+}
+.homeCont #random {
+    background-color: rgb(170, 185, 85);
+}
+/* End Home */

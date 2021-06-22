@@ -1,0 +1,147 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eaeaea;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+/* Start Contact Us */
+.contact-us {
+    padding: 80px 100px 120px;
+    background-image: url("../Images/Form/contact.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.contact-us .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+}
+.contact-us .container {
+    position: relative;
+    z-index: 2;
+  }
+.contact-us h2 {
+    text-align: center;
+    color: #f97619;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 40px;
+    border-bottom: 2px solid #f97619;
+    width: 175px;
+    margin: 0 auto 30px
+}
+.contact-us form {
+    overflow: hidden;
+    max-width: 800px;
+    margin: auto;
+}
+.contact-us form span {
+    display: block;
+    height: 25px;
+    margin-top: -11px;
+    font-size: 13px;
+    color: yellow;
+}
+.contact-us form .right {
+    float: right;
+    width: 49%;
+}
+.contact-us form .left {
+    float: left;
+    width: 49%;
+}
+.contact-us form input,
+.contact-us form textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+  
+.contact-us form input:focus,
+.contact-us form textarea:focus {
+    outline: none;
+    border: 1px solid #f97619;
+}
+.contact-us form input {
+    height: 40px;
+    border-radius: 5px
+}
+.contact-us form textarea {
+    height: 179px;
+    margin-bottom: 28px;
+    border-radius: 5px;
+    resize: none;
+}
+.contact-us form button {
+    width: 100%;
+    border-color: transparent;
+    background-color: #f97619;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    transition: .3s;
+}
+.contact-us form button:hover {
+    -webkit-box-shadow: 0 2px 15px #eee;
+    box-shadow: 0px 2px 15px #eee;
+    border: 1px solid #fff;
+}
+.contact-us form textarea::-moz-input-placeholder,
+.contact-us form input::-moz-input-placeholder {
+  font-size: 16px;
+}  
+.contact-us form textarea::-webkit-input-placeholder,
+.contact-us form input::-webkit-input-placeholder {
+    font-size: 16px;
+}
+.contact-us form textarea::placeholder,
+.contact-us form input::placeholder {
+    font-size: 16px;
+}
+@media (max-width: 767.9px) { /* Small devices (landscape phones, 576px and up)*/
+    .contact-us form .right,
+    .contact-us form .left {
+      float: none;
+      width: 100%;
+    }
+}
+.home {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: #f97619;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+.home:hover {
+    color: #f97619;
+    background-color: white;
+}
+/* End Contact Us*/

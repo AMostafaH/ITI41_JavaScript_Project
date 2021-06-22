@@ -1,0 +1,132 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eaeaea;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+/* Start About Me */
+.about  {
+    text-align: center;
+    padding-top: 20px;
+    background-image: url("../Images/About/gif.gif");
+    background-size: cover;
+    background-position: center;
+}
+.about h2.first {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f97619;
+    border-bottom: 2px solid;
+    width: 160px;
+    margin: 0 auto 20px;
+}
+.about .info h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+}
+.about .image {
+    width: 250px;
+    height: 250px;
+    margin: auto; 
+}
+.about img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #CCC;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: .3s;
+       -moz-transition: .3s;
+         -o-transition: .3s;
+            transition: .3s;
+}
+.about img:hover {
+    border: 2px solid #f97619;
+}
+.about p {
+    width: 65%;
+    margin: auto;
+    line-height: 1.6;
+    color: #c9c9c9;
+}
+.contact {
+    padding: 15px;
+    margin: 15px auto 0;
+    color: #bababa;
+}
+.contact ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.contact ul li {
+    display: inline-block;
+}
+.contact ul li a {
+    text-decoration: none;
+    color: #bababa;
+}
+.contact ul li a i{
+    width: 50px;
+    height: 50px;
+    background-color: #4D4D4D;
+    line-height: 50px;
+    font-size: 35px;
+    margin-left: 5px;
+    -webkit-transition: .3s;
+       -moz-transition: .3s;
+         -o-transition: .3s;
+            transition: .3s;
+}
+.contact ul li a i.fa-facebook:hover {
+    background-color: #3b5998;
+}
+.contact ul li a i.fa-twitter:hover {
+    background-color: #1da1f2;
+}
+.contact ul li a i.fa-linkedin:hover {
+    background-color: #0077b5;
+}
+.contact ul li a i.fa-github:hover {
+    background-color: #c68143;
+}
+.contact ul li a i.fa-codepen:hover {
+    background-color: #55486f;
+}
+.contact ul li a i:hover {
+    color: #FFF;
+}
+.home {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: #f97619;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+.home:hover {
+    color: #f97619;
+    background-color: white;
+}
+/* End About Me */

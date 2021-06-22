@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="../Css/Form.css">
+    <link rel="stylesheet" href="../Css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+</head>
+<body>
+    <!-- Start Contact Us -->
+    <div class="contact-us">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <!-- Start Form-->
+            <form action="Form.php" onsubmit="return validate()" method="POST">
+                <div class="left">
+                    
+                    <input type="text" name="firstName" placeholder="First Name">
+                    <span id="x1"></span>
+
+                    <input type="text" name="userName" placeholder="User Name">
+                    <span id="x2"></span>
+
+                    <input type="email" name="email" placeholder="Your Email">
+                    <span id="x3"></span>
+
+                    <input type="password" name="password" placeholder="Password">
+                    <span id="x4"></span>
+
+                    <input type="text" name="phone" placeholder="Your Phone">
+                    <span id="x5"></span>
+
+                </div>
+                <div class="right">
+
+                    <input type="text" name="secondName" placeholder="Second Name">
+                    <span id="x6"></span>
+
+                    <textarea placeholder="Message"></textarea>
+                    <button><i class="fa fa-send-o"></i> Send Message</button>
+
+                </div>
+            </form>
+            <!-- End Form--> 
+        </div>
+        <a href="../index.html" class="home">Home</a>
+    </div>
+    <!-- End Contact Us -->
+    <script src="../JS/Form.js"></script>  
+</body>
+</html>
